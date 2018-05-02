@@ -130,7 +130,14 @@ void loop()
   USB.print(F(" | Battery (Volts): "));
   USB.print(PWR.getBatteryVolts());
   USB.println(F(" V"));
-
+  
+  ///////////////////////////////////////////
+  //Add autogain 
+  //CO2.autoGain();
+  //SO2.autoGain();
+  //CO.autoGain();
+  //NO.autoGain();
+  ///////////////////////////////////////////
 
   ///////////////////////////////////////////
   // 3. Power off sensors
