@@ -87,6 +87,7 @@ void loop()
   gps_status = GPS.waitForSignal(TIMEOUT);
   if( gps_status == true ) {
     GPS.getPosition();
+    GPS.setTimeFromGPS();
   }
 
   // // And print the values via USB
